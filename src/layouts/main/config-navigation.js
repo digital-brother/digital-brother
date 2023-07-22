@@ -108,6 +108,7 @@ export const pageLinks = [
 ];
 
 export const navConfig = [
+  { title: 'Digital Brother', path: paths.digitalBrother },
   { title: 'Home', path: '/' },
   { title: 'Components', path: paths.components.root },
   {
