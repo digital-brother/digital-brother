@@ -22,6 +22,8 @@ const spacingLayout = [
   '/e-learning/',
   '/marketing',
   '/marketing/',
+  '/digital-brother/',
+  '/digital-brother/',
 ];
 
 export default function MainLayout({ children }) {
