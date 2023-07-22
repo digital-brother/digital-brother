@@ -11,9 +11,9 @@ import {
 
 import MarketingTeam from "../../_marketing/team/marketing-team";
 import MarketingNewsletter from "../../_marketing/marketing-newsletter";
-import MarketingOurClients from "../../_marketing/marketing-our-clients";
 import PricingMarketing from "../../pricing/marketing/pricing-marketing";
-import MarketingLandingHero from "../../_marketing/landing/marketing-landing-hero";
+import MarketingOurClients from "../../_marketing/marketing-our-clients";
+import DigitalBrotherLandingHero from "../landing/digital-brother-landing-hero";
 import BlogMarketingLatestPosts from "../../blog/marketing/marketing-latest-posts";
 import MarketingLandingFaqs from "../../_marketing/landing/marketing-landing-faqs";
 import MarketingLandingAbout from "../../_marketing/landing/marketing-landing-about";
@@ -28,7 +28,7 @@ import MarketingLandingCaseStudies from "../../_marketing/landing/marketing-land
 export default function DigitalBrotherLandingView() {
   return (
     <>
-      <MarketingLandingHero/>
+      <DigitalBrotherLandingHero/>
 
       <MarketingOurClients brands={_brands}/>
 
