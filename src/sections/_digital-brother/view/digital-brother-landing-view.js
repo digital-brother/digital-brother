@@ -22,6 +22,7 @@ import MarketingLandingProcess from "../../_marketing/landing/marketing-landing-
 import MarketingLandingFreeSEO from "../../_marketing/landing/marketing-landing-free-seo";
 import MarketingLandingServices from "../../_marketing/landing/marketing-landing-services";
 import MarketingLandingCaseStudies from "../../_marketing/landing/marketing-landing-case-studies";
+import DigitalBrotherLandingServices from "../landing/digital-brother-landing-services";
 
 // ----------------------------------------------------------------------
 
@@ -32,9 +33,7 @@ export default function DigitalBrotherLandingView() {
 
       <MarketingOurClients brands={_brands}/>
 
-      <MarketingLandingAbout/>
-
-      <MarketingLandingServices/>
+      <DigitalBrotherLandingServices/>
 
       <MarketingLandingProcess/>
 
