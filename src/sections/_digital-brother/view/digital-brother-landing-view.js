@@ -23,6 +23,7 @@ import MarketingLandingFreeSEO from "../../_marketing/landing/marketing-landing-
 import MarketingLandingServices from "../../_marketing/landing/marketing-landing-services";
 import MarketingLandingCaseStudies from "../../_marketing/landing/marketing-landing-case-studies";
 import DigitalBrotherLandingServices from "../landing/digital-brother-landing-services";
+import DigitalBrotherServicesInclude from "../services/digital-brother-services-include";
 
 // ----------------------------------------------------------------------
 
@@ -35,7 +36,7 @@ export default function DigitalBrotherLandingView() {
 
       <DigitalBrotherLandingServices/>
 
-      <MarketingLandingProcess/>
+      <DigitalBrotherServicesInclude/>
 
       <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)}/>
 
