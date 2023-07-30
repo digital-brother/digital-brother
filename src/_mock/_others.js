@@ -12,6 +12,19 @@ export const _categories = [
 
 // ----------------------------------------------------------------------
 
+export const _digitalBrotherTestimonials = [...Array(8)].map((_, index) => ({
+  id: _mock.id(index),
+  name: _mock.fullName(index),
+  role: _mock.role(index),
+  avatarUrl: _mock.image.avatar(index),
+  createdAt: _mock.time(index),
+  ratingNumber: 5,
+  review:
+    'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
+}));
+
+// ----------------------------------------------------------------------
+
 export const _testimonials = [...Array(8)].map((_, index) => ({
   id: _mock.id(index),
   name: _mock.fullName(index),
