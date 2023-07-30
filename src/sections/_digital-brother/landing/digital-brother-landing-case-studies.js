@@ -1,4 +1,4 @@
-import { m } from 'framer-motion';
+import {m} from 'framer-motion';
 import PropTypes from 'prop-types';
 
 import Box from '@mui/material/Box';
@@ -9,16 +9,16 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-import { alpha, useTheme } from '@mui/material/styles';
+import {alpha, useTheme} from '@mui/material/styles';
 
 import {_mock, _tags} from "src/_mock";
-import { paths } from 'src/routes/paths';
+import {paths} from 'src/routes/paths';
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
-import { RouterLink } from 'src/routes/components';
+import {RouterLink} from 'src/routes/components';
 import TextMaxLine from 'src/components/text-max-line';
-import { useResponsive } from 'src/hooks/use-responsive';
-import { varHover, varTranHover } from 'src/components/animate';
+import {useResponsive} from 'src/hooks/use-responsive';
+import {varHover, varTranHover} from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 
@@ -95,7 +95,31 @@ const _caseStudies = TITLE.map((_, index) => {
   };
 });
 
+const galleryImgs = [...Array(6)].map(
+  (_, index) => _mock.image.marketing(index)
+);
+
 const caseStudies = _caseStudies.slice(-6)
+const titles = caseStudies.map((caseStudy, index) => `${index}: ${caseStudy.title}`)
+console.log(titles)
+// const caseStudies = [
+//   {
+//     id: _mock.id(1),
+//     content: CONTENT,
+//     title: TITLE[1],
+//     category: _tags[1],
+//     createdAt: _mock.time(1),
+//     website: 'https://example.com/',
+//     description: _mock.description(1),
+//     heroUrl: '/assets/images/marketing/marketing_post_hero.jpg',
+//     coverUrl: `/assets/images/marketing/marketing_${1 + 1}.jpg`,
+//     how_we_work:
+//       'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
+//     results:
+//       'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
+//     galleryImgs,
+//   },
+// ]
 
 export default function DigitalBrotherLandingCaseStudies() {
   const mdUp = useResponsive('up', 'md');
@@ -104,17 +128,17 @@ export default function DigitalBrotherLandingCaseStudies() {
     <Container
       sx={{
         overflow: 'hidden',
-        pt: { xs: 5, md: 10 },
+        pt: {xs: 5, md: 10},
         pb: 10,
       }}
     >
       <Stack
         spacing={3}
         sx={{
-          textAlign: { xs: 'center', md: 'unset' },
+          textAlign: {xs: 'center', md: 'unset'},
         }}
       >
-        <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+        <Typography variant="overline" sx={{color: 'text.disabled'}}>
           Our Work
         </Typography>
 
@@ -126,61 +150,61 @@ export default function DigitalBrotherLandingCaseStudies() {
         container
         alignItems="center"
         sx={{
-          py: { xs: 8, md: 10 },
+          py: {xs: 8, md: 10},
         }}
       >
         <Grid xs={6} md={2}>
-          <SmallItem caseStudy={caseStudies[0]} />
+          <SmallItem caseStudy={caseStudies[0]}/>
         </Grid>
 
         {!mdUp && (
           <Grid xs={6} md={2}>
-            <SmallItem caseStudy={caseStudies[5]} />
+            <SmallItem caseStudy={caseStudies[5]}/>
           </Grid>
         )}
 
         <Grid container xs={12} sm={12} md={8}>
           <Grid xs={6} md={9}>
             {mdUp ? (
-              <LargeItem caseStudy={caseStudies[1]} />
+              <LargeItem caseStudy={caseStudies[1]}/>
             ) : (
-              <SmallItem caseStudy={caseStudies[1]} square />
+              <SmallItem caseStudy={caseStudies[1]} square/>
             )}
           </Grid>
 
           <Grid xs={6} md={3}>
-            <Stack justifyContent={{ md: 'flex-end' }} sx={{ height: { md: 1 } }}>
-              <SmallItem caseStudy={caseStudies[2]} square />
+            <Stack justifyContent={{md: 'flex-end'}} sx={{height: {md: 1}}}>
+              <SmallItem caseStudy={caseStudies[2]} square/>
             </Stack>
           </Grid>
 
           <Grid xs={6} md={3}>
-            <SmallItem caseStudy={caseStudies[3]} square />
+            <SmallItem caseStudy={caseStudies[3]} square/>
           </Grid>
 
           <Grid xs={6} md={9}>
             {mdUp ? (
-              <LargeItem caseStudy={caseStudies[4]} />
+              <LargeItem caseStudy={caseStudies[4]}/>
             ) : (
-              <SmallItem caseStudy={caseStudies[4]} square />
+              <SmallItem caseStudy={caseStudies[4]} square/>
             )}
           </Grid>
         </Grid>
 
         {mdUp && (
           <Grid xs={6} md={2}>
-            <SmallItem caseStudy={caseStudies[5]} />
+            <SmallItem caseStudy={caseStudies[5]}/>
           </Grid>
         )}
       </Grid>
 
-      <Stack alignItems={{ xs: 'center', md: 'flex-end' }}>
+      <Stack alignItems={{xs: 'center', md: 'flex-end'}}>
         <Button
           component={RouterLink}
           href={paths.marketing.caseStudies}
           size="large"
           color="inherit"
-          endIcon={<Iconify icon="carbon:chevron-right" />}
+          endIcon={<Iconify icon="carbon:chevron-right"/>}
         >
           View all
         </Button>
@@ -195,7 +219,7 @@ export default function DigitalBrotherLandingCaseStudies() {
 
 // ----------------------------------------------------------------------
 
-function LargeItem({ caseStudy }) {
+function LargeItem({caseStudy}) {
   return (
     <Paper
       sx={{
@@ -208,21 +232,21 @@ function LargeItem({ caseStudy }) {
         },
       }}
     >
-      <Box sx={{ p: 0.75 }}>
-        <Image alt="cover" src={caseStudy.coverUrl} ratio="3/4" sx={{ borderRadius: 2 }} />
+      <Box sx={{p: 0.75}}>
+        <Image alt="cover" src={caseStudy.coverUrl} ratio="3/4" sx={{borderRadius: 2}}/>
       </Box>
 
-      <Stack alignItems="flex-end" justifyContent="space-between" sx={{ p: 3, pt: 5, height: 1 }}>
+      <Stack alignItems="flex-end" justifyContent="space-between" sx={{p: 3, pt: 5, height: 1}}>
         <div>
-          <Typography variant="overline" sx={{ color: 'primary.main' }}>
+          <Typography variant="overline" sx={{color: 'primary.main'}}>
             {caseStudy.category}
           </Typography>
 
-          <Typography variant="h4" sx={{ mt: 1, mb: 2 }}>
+          <Typography variant="h4" sx={{mt: 1, mb: 2}}>
             {caseStudy.title}
           </Typography>
 
-          <TextMaxLine variant="body2" sx={{ color: 'text.secondary' }}>
+          <TextMaxLine variant="body2" sx={{color: 'text.secondary'}}>
             {caseStudy.description}
           </TextMaxLine>
         </div>
@@ -232,7 +256,7 @@ function LargeItem({ caseStudy }) {
           href={paths.marketing.caseStudy}
           size="small"
           color="inherit"
-          endIcon={<Iconify icon="carbon:chevron-right" />}
+          endIcon={<Iconify icon="carbon:chevron-right"/>}
         >
           Learn more
         </Button>
@@ -252,7 +276,7 @@ LargeItem.propTypes = {
 
 // ----------------------------------------------------------------------
 
-function SmallItem({ caseStudy, square }) {
+function SmallItem({caseStudy, square}) {
   const theme = useTheme();
 
   const mdUp = useResponsive('up', 'md');
@@ -282,7 +306,7 @@ function SmallItem({ caseStudy, square }) {
             textAlign: 'center',
           }}
         >
-          <Typography variant="overline" sx={{ opacity: 0.48 }}>
+          <Typography variant="overline" sx={{opacity: 0.48}}>
             {caseStudy.category}
           </Typography>
           <Typography variant="h6">{caseStudy.title}</Typography>
