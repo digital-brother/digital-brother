@@ -14,7 +14,7 @@ import TestimonialItem from './digital-brother-testimonial-item';
 
 // ----------------------------------------------------------------------
 
-const TESTIMONIALS = [...Array(8)].map((_, index) => ({
+const MOCKED_TESTIMONIALS = [...Array(8)].map((_, index) => ({
   id: _mock.id(index),
   name: _mock.fullName(index),
   role: _mock.role(index),
@@ -25,6 +25,39 @@ const TESTIMONIALS = [...Array(8)].map((_, index) => ({
     'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
 }));
 
+const TESTIMONIALS = [
+  {
+    id: 1,
+    name: 'David Grover',
+    role: 'CEO',
+    avatarUrl: _mock.image.avatar(1),
+    createdAt: _mock.time(1),
+    ratingNumber: 5,
+    review: `Digital Brother has shown again and again a high level of professionalism
+            and expertise in the subject of Python/Django development. It was my
+            third project with them and I am very satisfied and pleased with the work
+            they have provided. Communication wise, they were very responsive and ready
+            to help whenever asked. I can't stress enough my positive experience with
+            them but for any other projects I may have in the future, guys will be the
+            first one to consult.`,
+  },
+    {
+    id: 2,
+    name: 'Brandon Roskam',
+    role: 'CEO',
+    avatarUrl: _mock.image.avatar(2),
+    createdAt: _mock.time(2),
+    ratingNumber: 5,
+    review: `This was a short, live consultation. We spent one hour screen sharing and
+    exploring the problem, and Oleksandr spent one more hour looking into a remaining
+    problem on his own. What I was most impressed with was his ability to to research
+    and problem solve in only a few hours (between this an our previous job) what was
+    taking other developers many hours to figure out! I actually hired several other to
+    solve this problem before Oleksandr came along, and I regret not hiring him first!
+    I will definitely be hiring him again to help with me again in the future!`,
+  },
+]
+
 export default function DigitalBrotherTestimonial() {
   const carousel = useCarousel({
     autoplay: true,
@@ -33,7 +66,7 @@ export default function DigitalBrotherTestimonial() {
     slidesToScroll: 1,
     ...CarouselDots({
       sx: {
-        mt: { xs: 8, md: 10 },
+        mt: { xs: 4, md: 5 },
       },
     }),
   });
@@ -46,7 +79,7 @@ export default function DigitalBrotherTestimonial() {
           py: { xs: 10, md: 15 },
         }}
       >
-        <Stack spacing={2} sx={{ textAlign: 'center', mb: { xs: 8, md: 10 } }}>
+        <Stack spacing={2} sx={{ textAlign: 'center', mb: { xs: 4, md: 5 } }}>
           <Typography variant="overline" sx={{ color: 'text.disabled' }}>
             Testimonials
           </Typography>

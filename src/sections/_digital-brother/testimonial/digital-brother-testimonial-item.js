@@ -11,7 +11,7 @@ export default function TestimonialItem({ testimonial, ...other }) {
     <Stack
       spacing={{
         xs: 5,
-        md: 10,
+        md: 5,
       }}
       direction={{
         xs: 'column',
@@ -21,9 +21,10 @@ export default function TestimonialItem({ testimonial, ...other }) {
     >
       <Typography
         sx={{
-          fontSize: { md: 20 },
+          // fontSize: { md: 20 },
           lineHeight: 1.75,
           textAlign: { xs: 'center', md: 'left' },
+          mb: 5,
         }}
       >
         {testimonial.review}
