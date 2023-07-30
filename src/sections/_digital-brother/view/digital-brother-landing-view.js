@@ -3,10 +3,8 @@
 import {
   _brands,
   _members,
-  _caseStudies,
   _marketingPosts,
   _pricingMarketing,
-  _digitalBrotherTestimonials,
 } from 'src/_mock';
 
 import MarketingTeam from "../../_marketing/team/marketing-team";
@@ -20,7 +18,7 @@ import MarketingLandingFaqs from "../../_marketing/landing/marketing-landing-faq
 import DigitalBrotherLandingServices from "../landing/digital-brother-landing-services";
 import DigitalBrotherServicesInclude from "../services/digital-brother-services-include";
 import MarketingLandingFreeSEO from "../../_marketing/landing/marketing-landing-free-seo";
-import MarketingLandingCaseStudies from "../../_marketing/landing/marketing-landing-case-studies";
+import DigitalBrotherLandingCaseStudies from "../landing/digital-brother-landing-case-studies";
 
 // ----------------------------------------------------------------------
 
@@ -37,7 +35,7 @@ export default function DigitalBrotherLandingView() {
 
       <DigitalBrotherServicesInclude/>
 
-      <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)}/>
+      <DigitalBrotherLandingCaseStudies/>
 
       <MarketingTeam members={_members}/>
 
