@@ -8,11 +8,24 @@ import Typography from '@mui/material/Typography';
 
 import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
 
+import {_mock} from "../../../_mock";
+
 import TestimonialItem from './digital-brother-testimonial-item';
 
 // ----------------------------------------------------------------------
 
-export default function DigitalBrotherTestimonial({ testimonials }) {
+const TESTIMONIALS = [...Array(8)].map((_, index) => ({
+  id: _mock.id(index),
+  name: _mock.fullName(index),
+  role: _mock.role(index),
+  avatarUrl: _mock.image.avatar(index),
+  createdAt: _mock.time(index),
+  ratingNumber: 5,
+  review:
+    'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
+}));
+
+export default function DigitalBrotherTestimonial() {
   const carousel = useCarousel({
     autoplay: true,
     autoplaySpeed: 5000,
@@ -58,7 +71,7 @@ export default function DigitalBrotherTestimonial({ testimonials }) {
           <Grid container spacing={10} justifyContent="center">
             <Grid xs={12} md={8}>
               <Carousel ref={carousel.carouselRef} {...carousel.carouselSettings}>
-                {testimonials.map((testimonial) => (
+                {TESTIMONIALS.map((testimonial) => (
                   <TestimonialItem key={testimonial.id} testimonial={testimonial} />
                 ))}
               </Carousel>

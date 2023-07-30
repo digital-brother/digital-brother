@@ -33,7 +33,7 @@ export default function DigitalBrotherLandingView() {
 
       <DigitalBrotherLandingServices/>
 
-      <DigitalBrotherTestimonial testimonials={_digitalBrotherTestimonials}/>
+      <DigitalBrotherTestimonial />
 
       <DigitalBrotherServicesInclude/>
 
