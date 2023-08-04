@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
@@ -14,9 +13,7 @@ import {alpha, useTheme} from '@mui/material/styles';
 import {_mock, _tags} from "src/_mock";
 import {paths} from 'src/routes/paths';
 import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
 import {RouterLink} from 'src/routes/components';
-import TextMaxLine from 'src/components/text-max-line';
 import {useResponsive} from 'src/hooks/use-responsive';
 import {varHover, varTranHover} from 'src/components/animate';
 
@@ -99,27 +96,56 @@ const galleryImgs = [...Array(6)].map(
   (_, index) => _mock.image.marketing(index)
 );
 
-const caseStudies = _caseStudies.slice(-6)
-const titles = caseStudies.map((caseStudy, index) => `${index}: ${caseStudy.title}`)
-console.log(titles)
-// const caseStudies = [
-//   {
-//     id: _mock.id(1),
-//     content: CONTENT,
-//     title: TITLE[1],
-//     category: _tags[1],
-//     createdAt: _mock.time(1),
-//     website: 'https://example.com/',
-//     description: _mock.description(1),
-//     heroUrl: '/assets/images/marketing/marketing_post_hero.jpg',
-//     coverUrl: `/assets/images/marketing/marketing_${1 + 1}.jpg`,
-//     how_we_work:
-//       'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
-//     results:
-//       'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
-//     galleryImgs,
-//   },
-// ]
+// const caseStudies = _caseStudies.slice(-6)
+const caseStudies = [
+  {
+    title: TITLE[1],
+    category: "Healthcare",
+    description: `Created a portal for governmental medical organizations.
+                  Leaded a team of 3 persons.
+                  Designed microservice architecture on Flask, PostgreSQL,
+                  SQLAlchemy, flask-restful, marshmallow.
+                  Implemented OpenID Connect client protocol for custom client IdP.
+                  Setup deploy process using GitLab CI, Docker, nginx, SSL.
+                  Covered 86% of application with pytest, added Swagger
+                  documentation, logging, PEP8 formatting with black, flake8.`,
+    coverUrl: `/assets/images/digital-brother/healthcare.jpeg`,
+  },
+  {
+    title: TITLE[2],
+    category: "Telecommunications",
+    description: `Created a billing software for telecommunications company.
+                  Worked in a team of 11 persons. Created and optimized queries
+                  to ElasticSearch, primary data analysis with Kibana
+                  Searched and retrieved data from AWS S3. Wrote and refactored
+                  OOP code for all steps of ETL-process.
+                  Setup and adjusted virtual environment services with Docker,
+                  Vagrant.
+                  Worked with threading/multiprocessing issues, improved system
+                  scalability.
+                  Boosted up business metrics calculation process within pandas.
+                  Created detailed billing reports on customer demand.`,
+    coverUrl: `/assets/images/digital-brother/billing.jpeg`,
+  },
+  {
+    title: TITLE[3],
+    category: "E-commerce",
+    description: `Worked on projects to develop European internet-shops.
+                  The systems processed over 350 orders daily.
+                  Created database schema design, developed buy/sell
+                  functionality, integrated the system with Facebook API,
+                  and performed server configuration.
+                  Team size was five people.
+                  Tools and technologies included Python, Django,
+                  PostgreSQL, Celery, Redis, JavaScript, AJAX, HTML,
+                  CSS, Git, Trello, nginx, Gunicorn, and supervisor.
+                  Implemented site gamification, using asyncronous
+                  data processing.
+                  Implemented a functionality of a cart: add, remove,
+                  make an order, cancel it.`,
+    coverUrl: `/assets/images/digital-brother/e-commerce.jpeg`,
+  },
+]
 
 export default function DigitalBrotherLandingCaseStudies() {
   const mdUp = useResponsive('up', 'md');
@@ -146,69 +172,29 @@ export default function DigitalBrotherLandingCaseStudies() {
       </Stack>
 
       <Grid
-        spacing={3}
+        spacing={5}
         container
         alignItems="center"
         sx={{
           py: {xs: 8, md: 10},
         }}
+        justifyContent="center"
       >
-        <Grid xs={6} md={2}>
-          <SmallItem caseStudy={caseStudies[0]}/>
-        </Grid>
-
-        {!mdUp && (
-          <Grid xs={6} md={2}>
-            <SmallItem caseStudy={caseStudies[5]}/>
-          </Grid>
-        )}
-
-        <Grid container xs={12} sm={12} md={8}>
-          <Grid xs={6} md={9}>
-            {mdUp ? (
-              <LargeItem caseStudy={caseStudies[1]}/>
-            ) : (
-              <SmallItem caseStudy={caseStudies[1]} square/>
-            )}
+        <Grid container xs={8} justifyContent="center">
+          <Grid xs={12}>
+            <LargeItem caseStudy={caseStudies[0]}/>
           </Grid>
 
-          <Grid xs={6} md={3}>
-            <Stack justifyContent={{md: 'flex-end'}} sx={{height: {md: 1}}}>
-              <SmallItem caseStudy={caseStudies[2]} square/>
-            </Stack>
+          <Grid xs={12}>
+            <LargeItem caseStudy={caseStudies[1]}/>
           </Grid>
 
-          <Grid xs={6} md={3}>
-            <SmallItem caseStudy={caseStudies[3]} square/>
-          </Grid>
-
-          <Grid xs={6} md={9}>
-            {mdUp ? (
-              <LargeItem caseStudy={caseStudies[4]}/>
-            ) : (
-              <SmallItem caseStudy={caseStudies[4]} square/>
-            )}
+          <Grid xs={12}>
+            <LargeItem caseStudy={caseStudies[2]}/>
           </Grid>
         </Grid>
 
-        {mdUp && (
-          <Grid xs={6} md={2}>
-            <SmallItem caseStudy={caseStudies[5]}/>
-          </Grid>
-        )}
       </Grid>
-
-      <Stack alignItems={{xs: 'center', md: 'flex-end'}}>
-        <Button
-          component={RouterLink}
-          href={paths.marketing.caseStudies}
-          size="large"
-          color="inherit"
-          endIcon={<Iconify icon="carbon:chevron-right"/>}
-        >
-          View all
-        </Button>
-      </Stack>
     </Container>
   );
 }
@@ -232,8 +218,8 @@ function LargeItem({caseStudy}) {
         },
       }}
     >
-      <Box sx={{p: 0.75}}>
-        <Image alt="cover" src={caseStudy.coverUrl} ratio="3/4" sx={{borderRadius: 2}}/>
+      <Box sx={{p: 0.75, display: 'flex', alignItems: 'center'}}>
+        <Image alt="cover" src={caseStudy.coverUrl} ratio='1/1' sx={{borderRadius: 2}}/>
       </Box>
 
       <Stack alignItems="flex-end" justifyContent="space-between" sx={{p: 3, pt: 5, height: 1}}>
@@ -246,20 +232,11 @@ function LargeItem({caseStudy}) {
             {caseStudy.title}
           </Typography>
 
-          <TextMaxLine variant="body2" sx={{color: 'text.secondary'}}>
+          <Typography variant="body2" sx={{color: 'text.secondary'}}>
             {caseStudy.description}
-          </TextMaxLine>
+          </Typography>
         </div>
 
-        <Button
-          component={RouterLink}
-          href={paths.marketing.caseStudy}
-          size="small"
-          color="inherit"
-          endIcon={<Iconify icon="carbon:chevron-right"/>}
-        >
-          Learn more
-        </Button>
       </Stack>
     </Paper>
   );
