@@ -151,51 +151,53 @@ export default function DigitalBrotherLandingCaseStudies() {
   const mdUp = useResponsive('up', 'md');
 
   return (
-    <Container
-      sx={{
-        overflow: 'hidden',
-        pt: {xs: 5, md: 10},
-        pb: 10,
-      }}
-    >
-      <Stack
-        spacing={3}
+    <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }}>
+      <Container
         sx={{
-          textAlign: {xs: 'center', md: 'unset'},
+          overflow: 'hidden',
+          pt: {xs: 5, md: 10},
+          pb: {xs: 5},
         }}
       >
-        <Typography variant="overline" sx={{color: 'text.disabled'}}>
-          Our Work
-        </Typography>
+        <Stack
+          spacing={3}
+          sx={{
+            textAlign: {xs: 'center', md: 'unset'},
+          }}
+        >
+          <Typography variant="overline" sx={{color: 'text.disabled'}}>
+            Our Work
+          </Typography>
 
-        <Typography variant="h2">Case Studies</Typography>
-      </Stack>
+          <Typography variant="h2">Case Studies</Typography>
+        </Stack>
 
-      <Grid
-        spacing={5}
-        container
-        alignItems="center"
-        sx={{
-          py: {xs: 8, md: 10},
-        }}
-        justifyContent="center"
-      >
-        <Grid container xs={8} justifyContent="center">
-          <Grid xs={12}>
-            <LargeItem caseStudy={caseStudies[0]}/>
+        <Grid
+          spacing={5}
+          container
+          alignItems="center"
+          sx={{
+            py: {xs: 8, md: 10},
+          }}
+          justifyContent="center"
+        >
+          <Grid container xs={8} justifyContent="center">
+            <Grid xs={12}>
+              <LargeItem caseStudy={caseStudies[0]}/>
+            </Grid>
+
+            <Grid xs={12}>
+              <LargeItem caseStudy={caseStudies[1]}/>
+            </Grid>
+
+            <Grid xs={12}>
+              <LargeItem caseStudy={caseStudies[2]}/>
+            </Grid>
           </Grid>
 
-          <Grid xs={12}>
-            <LargeItem caseStudy={caseStudies[1]}/>
-          </Grid>
-
-          <Grid xs={12}>
-            <LargeItem caseStudy={caseStudies[2]}/>
-          </Grid>
         </Grid>
-
-      </Grid>
-    </Container>
+      </Container>
+    </Box>
   );
 }
 //
