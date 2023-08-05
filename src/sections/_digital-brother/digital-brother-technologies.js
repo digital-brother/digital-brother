@@ -35,7 +35,7 @@ export default function DigitalBrotherTechnologies() {
   return (
     <Container
       sx={{
-        pb: { xs: 7, md: 11 },
+        py: { xs: 7, md: 11 },
       }}
     >
       <Stack alignItems="center" spacing={5}>

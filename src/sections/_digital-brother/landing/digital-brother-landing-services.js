@@ -62,8 +62,8 @@ export default function DigitalBrotherLandingServices() {
         sx={{
           maxWidth: 480,
           mb: {xs: 8, md: 5},
-          mx: {xs: 'auto', md: 'unset'},
-          textAlign: {xs: 'center', md: 'unset'},
+          mx: {xs: 'auto'},
+          textAlign: {xs: 'center'},
         }}
       >
         <Typography variant="overline" sx={{color: 'text.disabled'}}>

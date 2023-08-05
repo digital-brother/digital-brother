@@ -162,7 +162,7 @@ export default function DigitalBrotherLandingCaseStudies() {
         <Stack
           spacing={3}
           sx={{
-            textAlign: {xs: 'center', md: 'unset'},
+            textAlign: {xs: 'center'},
           }}
         >
           <Typography variant="overline" sx={{color: 'text.disabled'}}>
