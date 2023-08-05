@@ -9,7 +9,7 @@ import {
 
 import MarketingTeam from "../../_marketing/team/marketing-team";
 import MarketingNewsletter from "../../_marketing/marketing-newsletter";
-import DigitalBrotherTechnologies from "../digital-brother-technologies";
+import DigitalBrotherAboutOurClients from "../digital-brother-technologies";
 import PricingMarketing from "../../pricing/marketing/pricing-marketing";
 import DigitalBrotherLandingHero from "../landing/digital-brother-landing-hero";
 import BlogMarketingLatestPosts from "../../blog/marketing/marketing-latest-posts";
@@ -19,6 +19,7 @@ import DigitalBrotherLandingServices from "../landing/digital-brother-landing-se
 import DigitalBrotherServicesInclude from "../services/digital-brother-services-include";
 import MarketingLandingFreeSEO from "../../_marketing/landing/marketing-landing-free-seo";
 import DigitalBrotherLandingCaseStudies from "../landing/digital-brother-landing-case-studies";
+import DigitalBrotherTechnologies from "../digital-brother-technologies";
 
 // ----------------------------------------------------------------------
 
@@ -27,8 +28,6 @@ export default function DigitalBrotherLandingView() {
     <>
       <DigitalBrotherLandingHero/>
 
-      <DigitalBrotherTechnologies technologies={_brands}/>
-
       <DigitalBrotherLandingServices/>
 
       <DigitalBrotherTestimonial />
@@ -36,6 +35,8 @@ export default function DigitalBrotherLandingView() {
       <DigitalBrotherServicesInclude/>
 
       <DigitalBrotherLandingCaseStudies/>
+
+      <DigitalBrotherTechnologies/>
 
       <MarketingTeam members={_members}/>
 

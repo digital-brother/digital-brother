@@ -1,58 +1,67 @@
-import PropTypes from 'prop-types';
-
-import { useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
-import SvgColor from 'src/components/svg-color';
-import Carousel, { useCarousel } from 'src/components/carousel';
+import Image from 'src/components/image';
+
+const TECHNOLOGIES_NAMES = [
+  'python',
+  'django',
+  'flask',
+  'js',
+  'react',
+  'next',
+  'drf',
+  'mongodb',
+  'postgres',
+  'celery',
+  'redis',
+  'elasticsearch',
+  'docker',
+  'aws',
+  'nginx',
+]
+
+const TECHNOLOGIES = TECHNOLOGIES_NAMES.map((technology, index) => ({
+  id: 1,
+  name: technology,
+  image: `/assets/logo/${technology}.png`,
+}));
 
 // ----------------------------------------------------------------------
 
-export default function DigitalBrotherTechnologies({ technologies }) {
-  const theme = useTheme();
-
-  const carousel = useCarousel({
-    speed: 5000,
-    autoplay: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    cssEase: 'linear',
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: theme.breakpoints.values.md,
-        settings: { slidesToShow: 4 },
-      },
-      {
-        breakpoint: theme.breakpoints.values.sm,
-        settings: { slidesToShow: 2 },
-      },
-    ],
-  });
-
+export default function DigitalBrotherTechnologies() {
   return (
     <Container
       sx={{
-        pt: { xs: 5, md: 10 },
+        pb: { xs: 7, md: 11 },
       }}
     >
-      <Carousel {...carousel.carouselSettings}>
-        {technologies.map((technology) => (
-          <SvgColor
-            key={technology.id}
-            src={technology.image}
-            sx={{
-              width: 106,
-              height: 32,
-              color: 'text.disabled',
-            }}
-          />
-        ))}
-      </Carousel>
+      <Stack alignItems="center" spacing={5}>
+        <Typography variant="h2">Our tech stack</Typography>
+
+        <Stack
+          direction="row"
+          flexWrap="wrap"
+          justifyContent="center"
+          sx={{ maxWidth: 800, overflow: 'hidden' }}
+        >
+          {TECHNOLOGIES.map((technology) => (
+            <Box key={technology.id}>
+              <Image
+                alt={technology.name}
+                src={technology.image}
+                sx={{
+                  height: 45,
+                  mx: { xs: 2, md: 4 },
+                  my: { xs: 2.5, md: 4 },
+                }}
+              />
+            </Box>
+          ))}
+        </Stack>
+      </Stack>
     </Container>
   );
 }
-
-DigitalBrotherTechnologies.propTypes = {
-  technologies: PropTypes.array,
-};
