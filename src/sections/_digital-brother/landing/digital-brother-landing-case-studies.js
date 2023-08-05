@@ -173,7 +173,7 @@ export default function DigitalBrotherLandingCaseStudies() {
         </Stack>
 
         <Grid
-          spacing={5}
+          spacing={{xs:3, md: 5, lg: 7}}
           container
           alignItems="center"
           sx={{

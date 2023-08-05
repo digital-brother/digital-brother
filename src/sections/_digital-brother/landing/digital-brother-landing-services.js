@@ -54,7 +54,7 @@ export default function DigitalBrotherLandingServices() {
   return (
     <Container
       sx={{
-        py: {xs: 5, md: 10},
+        py: {xs: 7, md: 11},
       }}
     >
       <Stack

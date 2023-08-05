@@ -17,7 +17,7 @@ export default function DigitalBrotherContactInfo() {
     <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }}>
       <Container
         sx={{
-          py: 10,
+          py: {xs: 6, md: 11},
           // display: {md: 'flex'},
           // alignItems: {md: 'center'},
           // height: {md: `100vh`},
