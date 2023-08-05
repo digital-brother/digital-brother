@@ -2,6 +2,7 @@
 
 import MarketingNewsletter from "../../_marketing/marketing-newsletter";
 import DigitalBrotherTechnologies from "../digital-brother-technologies";
+import DigitalBrotherContactInfo from "../contact/digital-brother-contact-info";
 import DigitalBrotherLandingHero from "../landing/digital-brother-landing-hero";
 import DigitalBrotherTestimonial from "../testimonial/digital-brother-testimonial";
 import DigitalBrotherLandingServices from "../landing/digital-brother-landing-services";
@@ -25,6 +26,8 @@ export default function DigitalBrotherLandingView() {
       <DigitalBrotherLandingCaseStudies/>
 
       <DigitalBrotherTechnologies/>
+
+      <DigitalBrotherContactInfo/>
 
       <MarketingLandingFreeSEO/>
 
