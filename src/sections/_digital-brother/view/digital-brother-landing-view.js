@@ -9,11 +9,11 @@ import {
 
 import MarketingTeam from "../../_marketing/team/marketing-team";
 import MarketingNewsletter from "../../_marketing/marketing-newsletter";
-import MarketingOurClients from "../../_marketing/marketing-our-clients";
+import DigitalBrotherTechnologies from "../digital-brother-technologies";
 import PricingMarketing from "../../pricing/marketing/pricing-marketing";
 import DigitalBrotherLandingHero from "../landing/digital-brother-landing-hero";
-import DigitalBrotherTestimonial from "../testimonial/digital-brother-testimonial";
 import BlogMarketingLatestPosts from "../../blog/marketing/marketing-latest-posts";
+import DigitalBrotherTestimonial from "../testimonial/digital-brother-testimonial";
 import MarketingLandingFaqs from "../../_marketing/landing/marketing-landing-faqs";
 import DigitalBrotherLandingServices from "../landing/digital-brother-landing-services";
 import DigitalBrotherServicesInclude from "../services/digital-brother-services-include";
@@ -27,7 +27,7 @@ export default function DigitalBrotherLandingView() {
     <>
       <DigitalBrotherLandingHero/>
 
-      <MarketingOurClients brands={_brands}/>
+      <DigitalBrotherTechnologies technologies={_brands}/>
 
       <DigitalBrotherLandingServices/>
 
