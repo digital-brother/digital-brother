@@ -39,7 +39,7 @@ export default function DigitalBrotherAbout() {
           <Grid
             xs={12}
             md={6}
-            lg={5}
+            lg={6}
             sx={{
               textAlign: {xs: 'center', md: 'left'},
             }}
@@ -49,7 +49,7 @@ export default function DigitalBrotherAbout() {
             </Typography>
 
             <Typography variant="h1" sx={{my: 3}}>
-              Python Django
+              Python&nbsp;Django
             </Typography>
 
             <Typography sx={{color: 'text.secondary'}}>
@@ -62,7 +62,7 @@ export default function DigitalBrotherAbout() {
           </Grid>
 
           {mdUp && (
-            <Grid xs={12} md={6} lg={7}>
+            <Grid xs={12} md={6} lg={6}>
               <Image
                 visibleByDefault
                 disabledEffect
