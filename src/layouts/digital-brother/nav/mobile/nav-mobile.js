@@ -1,25 +1,22 @@
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import PropTypes from 'prop-types';
 
 import List from '@mui/material/List';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-
-import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
-import { usePathname } from 'src/routes/hooks';
+import {usePathname} from 'src/routes/hooks';
 import Scrollbar from 'src/components/scrollbar';
-import { useBoolean } from 'src/hooks/use-boolean';
+import {useBoolean} from 'src/hooks/use-boolean';
 
-import { NAV } from '../../../config-layout';
+import {NAV} from '../../../config-layout';
 
 import NavList from './nav-list';
+import Image from "../../../../components/image";
 
 // ----------------------------------------------------------------------
 
-export default function NavMobile({ data }) {
+export default function NavMobile({data}) {
   const pathname = usePathname();
 
   const mobileOpen = useBoolean();
@@ -33,8 +30,8 @@ export default function NavMobile({ data }) {
 
   return (
     <>
-      <IconButton onClick={mobileOpen.onTrue} sx={{ ml: 1, color: 'inherit' }}>
-        <Iconify icon="carbon:menu" />
+      <IconButton onClick={mobileOpen.onTrue} sx={{ml: 1, color: 'inherit'}}>
+        <Iconify icon="carbon:menu"/>
       </IconButton>
 
       <Drawer
@@ -48,19 +45,22 @@ export default function NavMobile({ data }) {
         }}
       >
         <Scrollbar>
-          <Logo sx={{ mx: 2.5, my: 3 }} />
+          <Image
+            src='/assets/logo/digital-brother.png'
+            sx={{
+              height: 40,
+              width: 198,
+              borderRadius: 1.5,
+              mx: 2.5,
+              my: 2,
+            }}
+          />
 
           <List component="nav" disablePadding>
             {data.map((link) => (
-              <NavList key={link.title} item={link} />
+              <NavList key={link.title} item={link}/>
             ))}
           </List>
-
-          <Stack spacing={1.5} sx={{ p: 3 }}>
-            <Button fullWidth variant="contained" color="inherit">
-              Buy Now
-            </Button>
-          </Stack>
         </Scrollbar>
       </Drawer>
     </>
