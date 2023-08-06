@@ -14,7 +14,7 @@ export default function DigitalBrotherContactInfo() {
   const mdUp = useResponsive('up', 'md');
 
   return (
-    <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }} id='contacts'>
+    <Box sx={{bgcolor: 'background.neutral', overflow: 'hidden'}} id='contacts'>
       <Container
         sx={{
           py: {xs: 6, md: 11},
@@ -32,11 +32,13 @@ export default function DigitalBrotherContactInfo() {
 
         <Box display="flex" justifyContent="center">
           <Stack direction="row" spacing={8} mt={5}>
-            <Image
-              alt="marketing contact"
-              src="/assets/illustrations/illustration_marketing_contact.svg"
-              sx={{maxWidth: 250}}
-            />
+            {mdUp && (
+              <Image
+                alt="marketing contact"
+                src="/assets/illustrations/illustration_marketing_contact.svg"
+                sx={{maxWidth: 250}}
+              />
+            )}
 
             <Stack direction="column" spacing={2}>
               <Stack spacing={2} direction="row" alignItems="flex-start">

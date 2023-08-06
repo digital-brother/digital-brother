@@ -147,7 +147,7 @@ export default function DigitalBrotherLandingCaseStudies() {
           }}
           justifyContent="center"
         >
-          <Grid container xs={8} justifyContent="center">
+          <Grid container xs={12} md={8} justifyContent="center">
             <Grid xs={12}>
               <LargeItem caseStudy={caseStudies[0]}/>
             </Grid>
