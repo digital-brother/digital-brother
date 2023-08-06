@@ -50,7 +50,7 @@ const SERVICES = [
 
 // ----------------------------------------------------------------------
 
-export default function DigitalBrotherLandingServices() {
+export default function DigitalBrotherLandingIndustries() {
   return (
     <Container
       sx={{
