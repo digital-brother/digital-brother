@@ -2,32 +2,27 @@ import PropTypes from 'prop-types';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
-import { useTheme } from '@mui/material/styles';
+import {useTheme} from '@mui/material/styles';
 
-import { bgBlur } from 'src/theme/css';
-import Logo from 'src/components/logo';
-import { paths } from 'src/routes/paths';
-import Label from 'src/components/label';
-import { useResponsive } from 'src/hooks/use-responsive';
-import { useOffSetTop } from 'src/hooks/use-off-set-top';
+import {bgBlur} from 'src/theme/css';
+import {useResponsive} from 'src/hooks/use-responsive';
+import {useOffSetTop} from 'src/hooks/use-off-set-top';
 
-import { HEADER } from '../config-layout';
-import Searchbar from '../common/searchbar';
+import {HEADER} from '../config-layout';
 import HeaderShadow from '../common/header-shadow';
-import SettingsButton from '../common/settings-button';
 
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
-import { navConfig } from './config-navigation';
+import {navConfig} from './config-navigation';
+import Image from 'src/components/image';
+
 
 // ----------------------------------------------------------------------
 
-export default function Header({ headerOnDark }) {
+export default function Header({headerOnDark}) {
   const theme = useTheme();
 
   const offset = useOffSetTop();
@@ -51,7 +46,7 @@ export default function Header({ headerOnDark }) {
             color: 'common.white',
           }),
           ...(offset && {
-            ...bgBlur({ color: theme.palette.background.default }),
+            ...bgBlur({color: theme.palette.background.default}),
             color: 'text.primary',
             height: {
               md: HEADER.H_DESKTOP - 16,
@@ -60,37 +55,29 @@ export default function Header({ headerOnDark }) {
         }}
       >
         <Container
-          sx={{ height: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
+          sx={{height: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}
         >
-          <Box sx={{ lineHeight: 0, position: 'relative' }}>
-            <Logo />
+          <Box sx={{lineHeight: 0, position: 'relative', mr: 5}}>
+            <Link href='#about'>
+              <Image
+                src='/assets/logo/digital-brother.png'
 
-            <Link href="https://zone-docs.vercel.app/changelog" target="_blank" rel="noopener">
-              <Label
-                color="info"
                 sx={{
-                  ml: 0.5,
-                  px: 0.5,
-                  top: -14,
-                  left: 60,
-                  height: 20,
-                  fontSize: 11,
-                  cursor: 'pointer',
-                  position: 'absolute',
+                  height: 40,
+                  width: 198,
+                  borderRadius: 1.5,
                 }}
-              >
-                v2.1.0
-              </Label>
+              />
             </Link>
           </Box>
 
-          {mdUp && <NavDesktop data={navConfig} />}
+          {mdUp && <NavDesktop data={navConfig}/>}
 
-          {!mdUp && <NavMobile data={navConfig} />}
+          {!mdUp && <NavMobile data={navConfig}/>}
         </Container>
       </Toolbar>
 
-      {offset && <HeaderShadow />}
+      {offset && <HeaderShadow/>}
     </AppBar>
   );
 }
