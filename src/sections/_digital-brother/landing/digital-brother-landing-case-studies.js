@@ -99,7 +99,7 @@ const galleryImgs = [...Array(6)].map(
 // const caseStudies = _caseStudies.slice(-6)
 const caseStudies = [
   {
-    title: TITLE[1],
+    title: "Medical appointment scheduler",
     category: "Healthcare",
     description: `Created a portal for governmental medical organizations.
                   Leaded a team of 3 persons.
@@ -112,7 +112,7 @@ const caseStudies = [
     coverUrl: `/assets/images/digital-brother/healthcare.jpeg`,
   },
   {
-    title: TITLE[2],
+    title: "Billing system",
     category: "Telecommunications",
     description: `Created a billing software for telecommunications company.
                   Worked in a team of 11 persons. Created and optimized queries
@@ -128,7 +128,7 @@ const caseStudies = [
     coverUrl: `/assets/images/digital-brother/billing.jpeg`,
   },
   {
-    title: TITLE[3],
+    title: "Perfumery online shop",
     category: "E-commerce",
     description: `Worked on projects to develop European internet-shops.
                   The systems processed over 350 orders daily.
