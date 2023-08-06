@@ -12,37 +12,37 @@ const SERVICES = [
     description:
       'We analyze requirements, create flows for different user types, ' +
       'foresee corner cases. ',
-    icon: '/assets/icons/ic_report.svg',
+    icon: '/assets/icons/ic_checklist.svg',
   },
   {
     title: 'Front-end',
     description:
       'We create MVPs fast using prebuilt UI frameworks, like Bootstrap, Material',
-    icon: '/assets/icons/ic_statistics.svg',
+    icon: '/assets/icons/ic_web_programming.svg',
   },
   {
     title: 'Back-end',
     description:
       'Django has thousands of packages for majority of tasks in web development.',
-    icon: '/assets/icons/ic_social_media.svg',
+    icon: '/assets/icons/ic_chip.svg',
   },
   {
     title: 'Quality Assurance',
     description:
       'We create test plans and write unit tests to guarantee system stability over the time. ',
-    icon: '/assets/icons/ic_real_time.svg',
+    icon: '/assets/icons/ic_search.svg',
   },
   {
     title: 'DevOps',
     description:
       'We setup deploy with nginx, gunicorn, AWS, Heroku, Digital Ocean, CI/CD. ',
-    icon: '/assets/icons/ic_checklist.svg',
+    icon: '/assets/icons/ic_real_time.svg',
   },
   {
     title: 'Performance optimization',
     description:
       'We speed up sites by optimization of DB structure, ORM queries, algorithms. ',
-    icon: '/assets/icons/ic_file.svg',
+    icon: '/assets/icons/ic_optimization.svg',
   },
 ];
 
