@@ -58,7 +58,7 @@ export default function DigitalBrotherServices() {
       }}
       id='services'
     >
-      <Typography variant="h2">Services Include</Typography>
+      <Typography variant="h2">Services</Typography>
 
       <Typography
         sx={{

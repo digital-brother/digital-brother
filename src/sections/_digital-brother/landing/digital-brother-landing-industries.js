@@ -126,8 +126,8 @@ function ServiceItem({service, index}) {
         ratio="1/1"
         sx={{
           borderRadius: 1.5,
-          width: 88,
-          height: 88,
+          width: 120,
+          height: 120,
         }}
       />
 
