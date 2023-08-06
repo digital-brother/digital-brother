@@ -48,7 +48,7 @@ const SERVICES = [
 
 // ----------------------------------------------------------------------
 
-export default function DigitalBrotherServicesInclude() {
+export default function DigitalBrotherServices() {
   return (
     <Container
       sx={{
