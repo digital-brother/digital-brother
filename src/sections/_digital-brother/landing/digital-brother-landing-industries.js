@@ -6,14 +6,11 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import {paths} from 'src/routes/paths';
-import SvgColor from 'src/components/svg-color';
 import TextMaxLine from 'src/components/text-max-line';
+
 import Image from "../../../components/image";
 
 // ----------------------------------------------------------------------
-
-const COLORS = ['primary', 'secondary', 'success', 'warning'];
 
 const SERVICES = [
   {
@@ -22,7 +19,6 @@ const SERVICES = [
     content:
       'We create appointment system for medical organizations. ' +
       'Payments, analysis storage and export, analytics and alarms are included.',
-    path: paths.marketing.services,
   },
   {
     name: 'Marketing',
@@ -30,7 +26,6 @@ const SERVICES = [
     content:
       'We integrate with Google, Facebook, Instagram marketing API, ' +
       'implement account and ads management system.',
-    path: paths.marketing.services,
   },
   {
     name: 'Telecommunications',
@@ -38,14 +33,7 @@ const SERVICES = [
     content:
       'We created software for billing for 1000+ headcount telecommunications companies. ' +
       'We calculate metrics for multiple tenants in parallel.',
-    path: paths.marketing.services,
   },
-  // {
-  //   name: 'Social Marketing',
-  //   icon: '/assets/icons/service/ic_service_bullhorn.svg',
-  //   content: 'Nunc nonummy metus. Donec elit libero',
-  //   path: paths.marketing.services,
-  // },
 ];
 
 // ----------------------------------------------------------------------
