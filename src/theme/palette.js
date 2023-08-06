@@ -76,7 +76,7 @@ const COMMON = {
     black: '#000000',
     white: '#FFFFFF',
   },
-  primary: PRIMARY,
+  primary: SUCCESS,
   secondary: SECONDARY,
   info: INFO,
   success: SUCCESS,
