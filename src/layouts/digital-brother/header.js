@@ -86,26 +86,6 @@ export default function Header({ headerOnDark }) {
 
           {mdUp && <NavDesktop data={navConfig} />}
 
-          <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
-            <Stack spacing={1} direction="row" alignItems="center">
-              <Searchbar />
-
-              <SettingsButton />
-            </Stack>
-
-            {mdUp && (
-              <Button
-                variant="contained"
-                color="inherit"
-                href={paths.zoneStore}
-                target="_blank"
-                rel="noopener"
-              >
-                Buy Now
-              </Button>
-            )}
-          </Stack>
-
           {!mdUp && <NavMobile data={navConfig} />}
         </Container>
       </Toolbar>
