@@ -10,7 +10,7 @@ import {useResponsive} from 'src/hooks/use-responsive';
 
 // ----------------------------------------------------------------------
 
-export default function DigitalBrotherLandingHero() {
+export default function DigitalBrotherAbout() {
   const theme = useTheme();
 
   const mdUp = useResponsive('up', 'md');
