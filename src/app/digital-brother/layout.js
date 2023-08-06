@@ -2,12 +2,12 @@
 
 import PropTypes from 'prop-types';
 
-import MainLayout from 'src/layouts/main';
+import DigitalBrotherLayout from "../../layouts/digital-brother";
 
 // ----------------------------------------------------------------------
 
 export default function Layout({ children }) {
-  return <MainLayout>{children}</MainLayout>;
+  return <DigitalBrotherLayout>{children}</DigitalBrotherLayout>;
 }
 
 Layout.propTypes = {
