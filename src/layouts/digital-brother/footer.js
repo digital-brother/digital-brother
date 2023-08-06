@@ -22,8 +22,6 @@ import { useBoolean } from 'src/hooks/use-boolean';
 import { RouterLink } from 'src/routes/components';
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import { pageLinks, navConfig } from './config-navigation';
-
 // ----------------------------------------------------------------------
 
 const StyledAppStoreButton = styled(Button)(({ theme }) => ({

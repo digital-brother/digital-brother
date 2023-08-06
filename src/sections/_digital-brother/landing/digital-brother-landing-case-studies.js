@@ -151,7 +151,7 @@ export default function DigitalBrotherLandingCaseStudies() {
   const mdUp = useResponsive('up', 'md');
 
   return (
-    <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }}>
+    <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }} id='caseStudies'>
       <Container
         sx={{
           overflow: 'hidden',

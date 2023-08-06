@@ -17,6 +17,7 @@ export default function DigitalBrotherAbout() {
 
   return (
     <Box
+      id='about'
       sx={{
         ...bgGradient({
           color: alpha(theme.palette.background.default, 0.9),

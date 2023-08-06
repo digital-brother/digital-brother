@@ -72,7 +72,7 @@ export default function DigitalBrotherTestimonial() {
   });
 
   return (
-    <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }}>
+    <Box sx={{ bgcolor: 'background.neutral', overflow: 'hidden' }} id='testimonials'>
       <Container
         sx={{
           position: 'relative',

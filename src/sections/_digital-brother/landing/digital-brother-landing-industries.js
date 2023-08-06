@@ -53,6 +53,7 @@ const SERVICES = [
 export default function DigitalBrotherLandingIndustries() {
   return (
     <Container
+      id='industries'
       sx={{
         py: {xs: 7, md: 11},
       }}

@@ -37,6 +37,7 @@ export default function DigitalBrotherTechnologies() {
       sx={{
         py: { xs: 7, md: 11 },
       }}
+      id='technologies'
     >
       <Stack alignItems="center" spacing={5}>
         <Typography variant="h2">Our tech stack</Typography>

@@ -56,6 +56,7 @@ export default function DigitalBrotherServices() {
         pt: { xs: 5, md: 10 },
         pb: { xs: 10, md: 15 },
       }}
+      id='services'
     >
       <Typography variant="h2">Services Include</Typography>
 
