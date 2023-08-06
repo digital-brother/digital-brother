@@ -8,22 +8,9 @@ import Typography from '@mui/material/Typography';
 
 import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
 
-import {_mock} from "../../../_mock";
-
 import TestimonialItem from './digital-brother-testimonial-item';
 
 // ----------------------------------------------------------------------
-
-const MOCKED_TESTIMONIALS = [...Array(8)].map((_, index) => ({
-  id: _mock.id(index),
-  name: _mock.fullName(index),
-  role: _mock.role(index),
-  avatarUrl: _mock.image.avatar(index),
-  createdAt: _mock.time(index),
-  ratingNumber: 5,
-  review:
-    'Amazing experience i love it a lot. Thanks to the team that dreams come true, great! I appreciate there attitude and approach.',
-}));
 
 const TESTIMONIALS = [
   {
@@ -31,7 +18,6 @@ const TESTIMONIALS = [
     name: 'David Grover',
     role: 'CEO at Teachers Foundation',
     avatarUrl: '/assets/images/avatar/brendon-roskam.jpeg',
-    createdAt: _mock.time(1),
     ratingNumber: 5,
     review: `Digital Brother has shown again and again a high level of professionalism
             and expertise in the subject of Python/Django development. It was my
@@ -46,7 +32,6 @@ const TESTIMONIALS = [
     name: 'Brandon Roskam',
     role: 'CEO at Opencourse',
     avatarUrl: '/assets/images/avatar/david-grover.jpeg',
-    createdAt: _mock.time(2),
     ratingNumber: 5,
     review: `This was a short, live consultation. We spent one hour screen sharing and
     exploring the problem, and Oleksandr spent one more hour looking into a remaining

@@ -10,7 +10,6 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import {alpha, useTheme} from '@mui/material/styles';
 
-import {_mock, _tags} from "src/_mock";
 import {paths} from 'src/routes/paths';
 import Image from 'src/components/image';
 import {RouterLink} from 'src/routes/components';
@@ -64,39 +63,6 @@ const CONTENT = `
 </ul>
 `;
 
-const _caseStudies = TITLE.map((_, index) => {
-  const galleryImgs = [
-    _mock.image.marketing(0),
-    _mock.image.marketing(1),
-    _mock.image.marketing(2),
-    _mock.image.marketing(3),
-    _mock.image.marketing(4),
-    _mock.image.marketing(5),
-  ];
-
-  return {
-    id: _mock.id(index),
-    content: CONTENT,
-    title: TITLE[index],
-    category: _tags[index],
-    createdAt: _mock.time(index),
-    website: 'https://example.com/',
-    description: _mock.description(index),
-    heroUrl: '/assets/images/marketing/marketing_post_hero.jpg',
-    coverUrl: `/assets/images/marketing/marketing_${index + 1}.jpg`,
-    how_we_work:
-      'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
-    results:
-      'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
-    galleryImgs,
-  };
-});
-
-const galleryImgs = [...Array(6)].map(
-  (_, index) => _mock.image.marketing(index)
-);
-
-// const caseStudies = _caseStudies.slice(-6)
 const caseStudies = [
   {
     title: "Medical appointment scheduler",
