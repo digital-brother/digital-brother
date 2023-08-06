@@ -29,8 +29,8 @@ const TESTIMONIALS = [
   {
     id: 1,
     name: 'David Grover',
-    role: 'CEO',
-    avatarUrl: _mock.image.avatar(1),
+    role: 'CEO at Teachers Foundation',
+    avatarUrl: '/assets/images/avatar/brendon-roskam.jpeg',
     createdAt: _mock.time(1),
     ratingNumber: 5,
     review: `Digital Brother has shown again and again a high level of professionalism
@@ -44,8 +44,8 @@ const TESTIMONIALS = [
     {
     id: 2,
     name: 'Brandon Roskam',
-    role: 'CEO',
-    avatarUrl: _mock.image.avatar(2),
+    role: 'CEO at Opencourse',
+    avatarUrl: '/assets/images/avatar/david-grover.jpeg',
     createdAt: _mock.time(2),
     ratingNumber: 5,
     review: `This was a short, live consultation. We spent one hour screen sharing and
