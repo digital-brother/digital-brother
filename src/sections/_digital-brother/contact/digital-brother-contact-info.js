@@ -27,7 +27,7 @@ export default function DigitalBrotherContactInfo() {
 
       >
         <Typography variant="h2" align="center">
-          Contact us
+          Contacts
         </Typography>
 
         <Box display="flex" justifyContent="center">

@@ -40,7 +40,7 @@ export default function DigitalBrotherTechnologies() {
       id='technologies'
     >
       <Stack alignItems="center" spacing={5}>
-        <Typography variant="h2">Our tech stack</Typography>
+        <Typography variant="h2">Technologies</Typography>
 
         <Stack
           direction="row"

@@ -4,20 +4,21 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Container from '@mui/material/Container';
 import {useTheme} from '@mui/material/styles';
+import Container from '@mui/material/Container';
 
 import {bgBlur} from 'src/theme/css';
+import Image from 'src/components/image';
 import {useResponsive} from 'src/hooks/use-responsive';
 import {useOffSetTop} from 'src/hooks/use-off-set-top';
 
 import {HEADER} from '../config-layout';
+import {RouterLink} from "../../routes/components";
 import HeaderShadow from '../common/header-shadow';
 
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
 import {navConfig} from './config-navigation';
-import Image from 'src/components/image';
 
 
 // ----------------------------------------------------------------------
@@ -58,7 +59,7 @@ export default function Header({headerOnDark}) {
           sx={{height: 1, display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}
         >
           <Box sx={{lineHeight: 0, position: 'relative', mr: 5}}>
-            <Link href='#about'>
+            <Link component={RouterLink} href='#about'>
               <Image
                 src='/assets/logo/digital-brother.png'
 
