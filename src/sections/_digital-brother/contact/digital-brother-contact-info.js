@@ -1,3 +1,4 @@
+import Box from "@mui/material/Box";
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Container from "@mui/material/Container";
@@ -6,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 import {useResponsive} from 'src/hooks/use-responsive';
-import Box from "@mui/material/Box";
 
 // ----------------------------------------------------------------------
 

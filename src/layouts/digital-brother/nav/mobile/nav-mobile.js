@@ -4,15 +4,16 @@ import PropTypes from 'prop-types';
 import List from '@mui/material/List';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import Iconify from 'src/components/iconify';
+
 import {usePathname} from 'src/routes/hooks';
-import Scrollbar from 'src/components/scrollbar';
+import Iconify from 'src/components/iconify';
 import {useBoolean} from 'src/hooks/use-boolean';
+import Scrollbar from 'src/components/scrollbar';
 
 import {NAV} from '../../../config-layout';
+import Image from "../../../../components/image";
 
 import NavList from './nav-list';
-import Image from "../../../../components/image";
 
 // ----------------------------------------------------------------------
 

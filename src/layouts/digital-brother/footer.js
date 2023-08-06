@@ -2,6 +2,7 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+
 import Logo from 'src/components/logo';
 import {usePathname} from 'src/routes/hooks';
 
