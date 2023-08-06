@@ -46,12 +46,12 @@ export default function DigitalBrotherContactInfo() {
                   <Stack spacing={1} direction="row" alignItems="center">
                     <Typography variant="h6">Visit us</Typography>
 
-                    <Link sx={{lineHeight: 0}}>
+                    <Link sx={{lineHeight: 0}} href='https://goo.gl/maps/2rr6ektLKjbXPUNW9' target='blank'>
                       <Iconify icon="carbon:launch" width={18}/>
                     </Link>
                   </Stack>
 
-                  <Typography variant="body2">508 Bridle Avenue Newnan, GA 30263e</Typography>
+                  <Typography variant="body2">Volodymyrska 47, Kyiv, Ukraine, 01001</Typography>
                 </Stack>
               </Stack>
 
@@ -59,6 +59,7 @@ export default function DigitalBrotherContactInfo() {
                 <Iconify width={28} icon="carbon:mobile"/>
                 <Stack spacing={0.5}>
                   <Typography variant="h6">Call us</Typography>
+                  <Typography variant="body2">+38 (095) 507 82 62</Typography>
                 </Stack>
               </Stack>
 
@@ -66,8 +67,8 @@ export default function DigitalBrotherContactInfo() {
                 <Iconify width={28} icon="carbon:email"/>
                 <Stack spacing={0.5}>
                   <Typography variant="h6">Talk to us</Typography>
-                  <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-                    hello@example.com
+                  <Link color="inherit" variant="body2" href="mailto:oleksandr.shuryhin@digital-brother.io">
+                    oleksandr.shuryhin@digital-brother.io
                   </Link>
                 </Stack>
               </Stack>
