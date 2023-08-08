@@ -26,7 +26,7 @@ const TECHNOLOGIES_NAMES = [
 const TECHNOLOGIES = TECHNOLOGIES_NAMES.map((technology, index) => ({
   id: 1,
   name: technology,
-  image: `/assets/logo/${technology}.png`,
+  image: `/assets/logo/small/${technology}.png`,
 }));
 
 // ----------------------------------------------------------------------
