@@ -17,23 +17,23 @@ const SERVICES = [
     name: 'Healthcare',
     icon: '/assets/images/expertise/healthcare.png',
     content:
-      'We developed appointment systems for medical organizations, incorporating ' +
-      'features like payments, analysis storage and export, as well as analytics and alarms.',
+      `We developed appointment systems for medical organizations, incorporating
+      features like payments, analysis storage and export, as well as analytics and alarms.`,
   },
   {
     name: 'Marketing',
     icon: '/assets/images/expertise/marketing.png',
     content:
-      'We seamlessly integrated with the marketing APIs from Google, Facebook, ' +
-      'and Instagram, providing a robust account and ads management system.',
+      `We seamlessly integrated with the marketing APIs from Google, Facebook,
+      and Instagram, providing a robust account and ads management system.`,
   },
   {
     name: 'Telecommunications',
     icon: '/assets/images/expertise/telecommunications.png',
     content:
-      'We developed billing software tailored for telecommunications companies ' +
-      'with more than 1000 employees. Our system was designed to calculate metrics ' +
-      'for multiple tenants simultaneously.',
+      `We developed billing software tailored for telecommunications companies
+      with more than 1000 employees. Our system was designed to calculate metrics
+      for multiple tenants simultaneously.`,
   },
 ];
 
