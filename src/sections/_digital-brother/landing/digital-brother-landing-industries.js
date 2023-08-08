@@ -63,7 +63,7 @@ export default function DigitalBrotherLandingIndustries() {
         <Typography variant="h2">Industries</Typography>
 
         <Typography sx={{color: 'text.secondary'}}>
-          We're renowned for our extensive knowledge of Django libraries in the following industries:
+          We are renowned for our extensive knowledge of Django libraries in the following industries:
         </Typography>
       </Stack>
 
