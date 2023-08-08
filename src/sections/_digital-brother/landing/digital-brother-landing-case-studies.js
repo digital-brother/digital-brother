@@ -67,48 +67,33 @@ const caseStudies = [
   {
     title: "Medical appointment scheduler",
     category: "Healthcare",
-    description: `Created a portal for governmental medical organizations.
-                  Leaded a team of 3 persons.
-                  Designed microservice architecture on Flask, PostgreSQL,
-                  SQLAlchemy, flask-restful, marshmallow.
-                  Implemented OpenID Connect client protocol for custom client IdP.
-                  Setup deploy process using GitLab CI, Docker, nginx, SSL.
-                  Covered 86% of application with pytest, added Swagger
-                  documentation, logging, PEP8 formatting with black, flake8.`,
+    description: `The project enabled global doctor appointment bookings. Users
+    choose a medical center and doctor, pay, and upload a barcode ticket. They
+    then attend appointments and view summaries later. A separate process lets
+    medical centers join the network, involving quizzes created by ministry
+    workers, completed by representatives, and reviewed by auditors.`,
     coverUrl: `/assets/images/digital-brother/healthcare.jpeg`,
   },
   {
     title: "Billing system",
     category: "Telecommunications",
-    description: `Created a billing software for telecommunications company.
-                  Worked in a team of 11 persons. Created and optimized queries
-                  to ElasticSearch, primary data analysis with Kibana
-                  Searched and retrieved data from AWS S3. Wrote and refactored
-                  OOP code for all steps of ETL-process.
-                  Setup and adjusted virtual environment services with Docker,
-                  Vagrant.
-                  Worked with threading/multiprocessing issues, improved system
-                  scalability.
-                  Boosted up business metrics calculation process within pandas.
-                  Created detailed billing reports on customer demand.`,
+    description: `An ETL process was conducted, connecting to databases, SFTP
+    servers, and CRM storages to extract data into zipped files. Transformation
+    included unpacking and calculating metrics like call details and PSTN usage.
+    Loading uploaded the results to SFTP servers. Due to large data volume,
+    multiple machines were used, synchronized with central storage to avoid
+    duplicate calculations.`,
     coverUrl: `/assets/images/digital-brother/billing.jpeg`,
   },
   {
     title: "Perfumery online shop",
     category: "E-commerce",
-    description: `Worked on projects to develop European internet-shops.
-                  The systems processed over 350 orders daily.
-                  Created database schema design, developed buy/sell
-                  functionality, integrated the system with Facebook API,
-                  and performed server configuration.
-                  Team size was five people.
-                  Tools and technologies included Python, Django,
-                  PostgreSQL, Celery, Redis, JavaScript, AJAX, HTML,
-                  CSS, Git, Trello, nginx, Gunicorn, and supervisor.
-                  Implemented site gamification, using asyncronous
-                  data processing.
-                  Implemented a functionality of a cart: add, remove,
-                  make an order, cancel it.`,
+    description: `Users could search for perfumes by scent type, manufacturer,
+    and size, and add them to a cart. After providing delivery and payment details,
+    they confirmed the order. Business owners had access to accounting reports
+    and order statuses, while shop administrators could add or edit products
+    and blog pages. This system provided a seamless shopping experience for
+    customers and efficient management for owners.`,
     coverUrl: `/assets/images/digital-brother/e-commerce.jpeg`,
   },
 ]
