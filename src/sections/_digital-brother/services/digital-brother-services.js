@@ -11,37 +11,41 @@ const SERVICES = [
     title: 'Business analysis',
     description:
       'We analyze requirements, create flows for different user types, ' +
-      'foresee corner cases. ',
+      'anticipate corner cases.',
     icon: '/assets/icons/ic_checklist.svg',
   },
   {
     title: 'Front-end',
     description:
-      'We create MVPs fast using prebuilt UI frameworks, like Bootstrap, Material',
+      'We quickly create MVPs using prebuilt frameworks such as React, Material.',
     icon: '/assets/icons/ic_web_programming.svg',
   },
   {
     title: 'Back-end',
     description:
-      'Django has thousands of packages for majority of tasks in web development.',
+      'Django offers thousands of packages for the majority of tasks in web ' +
+      'development.',
     icon: '/assets/icons/ic_chip.svg',
   },
   {
     title: 'Quality Assurance',
     description:
-      'We create test plans and write unit tests to guarantee system stability over the time. ',
+      'We create test plans and write unit tests to ensure system stability ' +
+      'over time.',
     icon: '/assets/icons/ic_search.svg',
   },
   {
     title: 'DevOps',
     description:
-      'We setup deploy with nginx, gunicorn, AWS, Heroku, Digital Ocean, CI/CD. ',
+      'We set up deployment using tools like Nginx, Gunicorn, AWS, ' +
+      'and CI/CD.',
     icon: '/assets/icons/ic_real_time.svg',
   },
   {
     title: 'Performance optimization',
     description:
-      'We speed up sites by optimization of DB structure, ORM queries, algorithms. ',
+      'We enhance site speed through the optimization of database structure, ' +
+      'ORM queries, and algorithms.',
     icon: '/assets/icons/ic_optimization.svg',
   },
 ];
@@ -69,7 +73,7 @@ export default function DigitalBrotherServices() {
           mb: { xs: 8, md: 10 },
         }}
       >
-        We cover almost every need our clients need during a website development.
+        We cater to nearly every need our clients have during website development.
       </Typography>
 
       <Box
