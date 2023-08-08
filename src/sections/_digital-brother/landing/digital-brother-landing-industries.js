@@ -17,22 +17,23 @@ const SERVICES = [
     name: 'Healthcare',
     icon: '/assets/images/expertise/healthcare.png',
     content:
-      'We create appointment system for medical organizations. ' +
-      'Payments, analysis storage and export, analytics and alarms are included.',
+      'We developed appointment systems for medical organizations, incorporating ' +
+      'features like payments, analysis storage and export, as well as analytics and alarms.',
   },
   {
     name: 'Marketing',
     icon: '/assets/images/expertise/marketing.png',
     content:
-      'We integrate with Google, Facebook, Instagram marketing API, ' +
-      'implement account and ads management system.',
+      'We seamlessly integrated with the marketing APIs from Google, Facebook, ' +
+      'and Instagram, providing a robust account and ads management system.',
   },
   {
     name: 'Telecommunications',
     icon: '/assets/images/expertise/telecommunications.png',
     content:
-      'We created software for billing for 1000+ headcount telecommunications companies. ' +
-      'We calculate metrics for multiple tenants in parallel.',
+      'We developed billing software tailored for telecommunications companies ' +
+      'with more than 1000 employees. Our system was designed to calculate metrics ' +
+      'for multiple tenants simultaneously.',
   },
 ];
 
@@ -62,7 +63,7 @@ export default function DigitalBrotherLandingIndustries() {
         <Typography variant="h2">Industries</Typography>
 
         <Typography sx={{color: 'text.secondary'}}>
-          We are well-known and have a good understanding of Django libraries in following industries.
+          We're renowned for our extensive knowledge of Django libraries in the following industries:
         </Typography>
       </Stack>
 

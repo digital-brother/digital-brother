@@ -53,8 +53,8 @@ export default function DigitalBrotherAbout() {
             </Typography>
 
             <Typography sx={{color: 'text.secondary'}}>
-              We help tech companies to develop sites with Python and Django.
-              E-commerce, healthcare, telecom solutions.
+              We assist tech companies in building websites with Python and Django,
+              specializing in solutions for e-commerce, healthcare, and the telecom industry.
             </Typography>
 
             <Typography variant="overline" component="div" sx={{mt: 3}}>Oleksandr Shuryhin</Typography>
